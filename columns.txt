@@ -1,5 +1,0 @@
-Total Loan Balance
-Remaining Loan Balance
-Interest
-Current Monthly Payment
-Months Left
