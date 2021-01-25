@@ -4,7 +4,7 @@ import os
 from settings import Settings
 
 
-class AutoLoanPayment(object):
+class AutoLoanScheduler(object):
 
     def __init__(self):
         self.settings = Settings()
@@ -101,5 +101,5 @@ class AutoLoanPayment(object):
 
 
 if __name__ == "__main__":
-    calc = AutoLoanPayment()
+    calc = AutoLoanScheduler()
     calc.scheduler()
