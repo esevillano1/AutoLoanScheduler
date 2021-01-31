@@ -1,0 +1,777 @@
+/*
+** Qt Style Sheet based on Autodesk 3DS Max Software 
+*/
+
+QDialog {
+    font: 12px "Segoe UI";
+    background-color: rgb(67,67,67);
+    color: rgb(198,198,198);
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+       stop: 0 rgb(67,67,67),
+       stop: 0.7 rgb(67,67,67),
+       stop: 0.71 rgb(37,37,37),
+       stop: 1 rgb(37,37,37));
+    margin-bottom: 10px;
+ }
+ 
+ QDialog * {
+    font: 12px "Segoe UI";
+ }
+  
+ QCheckBox#mShowWelcomeScreenBox {
+    font: 10px "Segoe UI";
+    color: rgb(178,178,178);
+    margin: 0px;
+    spacing: 4px;
+ }
+ 
+ QCheckBox::indicator {
+    margin-top: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgb(178,178,178);
+ }
+  
+ QCheckBox::indicator:checked {
+    background: qconicalgradient(cx: 0.5, cy: 0.5, angle: 0,
+       stop: 0     rgb(67,67,67),
+       stop: 0.11  rgb(67,67,67),
+       stop: 0.111 rgb(178,178,178),
+       stop: 0.139 rgb(178,178,178),
+       stop: 0.14  rgb(67,67,67),
+       stop: 0.36  rgb(67,67,67),
+       stop: 0.361 rgb(178,178,178),
+       stop: 0.389 rgb(178,178,178),
+       stop: 0.39  rgb(67,67,67),
+       stop: 0.61  rgb(67,67,67),
+       stop: 0.611 rgb(178,178,178),
+       stop: 0.639 rgb(178,178,178),
+       stop: 0.64  rgb(67,67,67),
+       stop: 0.86  rgb(67,67,67),
+       stop: 0.861 rgb(178,178,178),
+       stop: 0.889 rgb(178,178,178),
+       stop: 0.89  rgb(67,67,67),
+       stop: 1     rgb(67,67,67));
+ }
+  
+ QCheckBox::indicator:hover {
+    border: 1px solid rgb(242,242,242);
+ }
+  
+ QCheckBox::indicator:checked:hover {
+    background: qconicalgradient(cx: 0.5, cy: 0.5, angle: 0,
+       stop: 0     rgb(67,67,67),
+       stop: 0.11  rgb(67,67,67),
+       stop: 0.111 rgb(242,242,242),
+       stop: 0.139 rgb(242,242,242),
+       stop: 0.14  rgb(67,67,67),
+       stop: 0.36  rgb(67,67,67),
+       stop: 0.361 rgb(242,242,242),
+       stop: 0.389 rgb(242,242,242),
+       stop: 0.39  rgb(67,67,67),
+       stop: 0.61  rgb(67,67,67),
+       stop: 0.611 rgb(242,242,242),
+       stop: 0.639 rgb(242,242,242),
+       stop: 0.64  rgb(67,67,67),
+       stop: 0.86  rgb(67,67,67),
+       stop: 0.861 rgb(242,242,242),
+       stop: 0.889 rgb(242,242,242),
+       stop: 0.89  rgb(67,67,67),
+       stop: 1     rgb(67,67,67));
+ }
+  
+ .QWidget {
+    background-color: rgb(67,67,67);
+    color: rgb(198,198,198);
+ }
+ 
+ QToolTip {
+    font: 10px "Segoe UI";
+ }
+ 
+ QWidget#mLeftPane, QWidget#mRightPane {
+    margin-top: 152px;
+    margin-bottom: 41px;
+ }
+ 
+ QPushButton, QComboBox,
+ #mMoreApps, #mVegetation, #mAssetLibraryAppExchange {
+    font: 12px "Segoe UI";
+    background-color: qlineargradient(x1: 0, y1:0, x2: 0, y2: 1,
+       stop: 0 rgb(119,119,119),
+       stop: 0.45 rgb(119,119,119),
+       stop: 0.48 rgb(89,89,89),
+       stop: 0.52 rgb(77,77,77),
+       stop: 0.55 rgb(67,67,67),
+       stop: 1 rgb(57,57,57) ); 
+    color: rgb(220,220,220);
+    border: 1px solid rgb(27,27,27);
+    border-radius: 2px;
+    min-width: 80;
+    padding: 1px 4px 2px 4px;
+ }
+ 
+ #mNewSceneExt QToolButton {
+    font: 12px "Segoe UI";
+    background-color:  rgb(77,77,77);
+    color: rgb(220,220,220);
+    border: 0px solid rgb(27,27,27);
+    border-radius: 2px;
+    padding: -2px 0px -2px 0px;
+ }
+ 
+ QPushButton:hover, QComboBox:hover,
+ #mNewSceneExt QToolButton:hover,
+ #mMoreApps:hover, #mVegetation:hover, #mAssetLibraryAppExchange:hover {
+    background-color: qlineargradient(x1: 0, y1:0, x2: 0, y2: 1,
+       stop: 0 rgb(136,136,136),
+       stop: 0.45 rgb(119,119,119),
+       stop: 0.48 rgb(104,104,104),
+       stop: 0.52 rgb(89,89,89),
+       stop: 0.55 rgb(77,77,77),
+       stop: 1 rgb(67,67,67) ); 
+    color: rgb(255,255,255);
+    border: 1px solid rgb(37,37,37);
+ }
+ 
+ QPushButton:pressed, QComboBox:pressed, QComboxBox:on,
+ #mNewSceneExt QToolButton:pressed,
+ #mMoreApps:selected, #mVegetation:selected, #mAssetLibraryAppExchange:selected {
+    background-color: qlineargradient(x1: 0, y1:0, x2: 0, y2: 1,
+       stop: 0 rgb(77,77,77),
+       stop: 0.2 rgb(104,104,104),
+       stop: 0.45 rgb(104,104,104),
+       stop: 0.48 rgb(89,89,89),
+       stop: 0.52 rgb(77,77,77),
+       stop: 0.55 rgb(67,67,67),
+       stop: 1 rgb(67,67,67) ); 
+    color: rgb(220,220,220);
+    border: 1px solid rgb(27,27,27);
+    padding: 2px 3px 1px 5px;
+ }
+ 
+ QScrollBar:vertical {
+    background: rgb(119,119,119);
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid rgb(37,37,37);
+    border-right: 1px solid rgb(37,37,37);
+    margin: 12px 0px 12px 0px;
+    width: 10px;
+ }
+ 
+ QScrollBar::handle:vertical {
+    background: rgb(119,119,119);
+    border-top: 2px solid rgb(37,37,37);
+    border-bottom: 2px solid rgb(37,37,37);
+    min-height: 20px;
+ }
+ 
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: rgb(37,37,37);
+    color: rgb(37,37,37);
+ }
+ 
+ QScrollBar:vertical:hover, QScrollBar::handle:vertical:hover {
+    background-color: rgb(136,136,136);
+ }
+ 
+ QScrollBar:vertical:pressed, QScrollBar::handle:vertical:pressed {
+    background-color: rgb(136,136,136);
+ }
+ 
+ QScrollBar::add-line:vertical {
+    height: 12px;
+    border-left: 2px solid rgb(37,37,37);
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+    color: rgb(37,37,37);
+    background: rgb(37,37,37);
+ }
+ 
+ QScrollBar::down-arrow:vertical {
+    width: 8px;
+    height: 12px;
+    color: rgb(37,37,37);
+    background: qconicalgradient(cx: 0.5, cy: 0.8, angle: 0,
+       stop: 0.15 rgb(37,37,37),
+       stop: 0.16 rgb(119,119,119),
+       stop: 0.34 rgb(119,119,119),
+       stop: 0.35 rgb(37,37,37));
+ }
+ 
+ QScrollBar::down-arrow:vertical:hover, QScrollBar::down-arrow:vertical:pressed {
+    width: 8px;
+    height: 12px;
+    color: rgb(37,37,37);
+    background: qconicalgradient(cx: 0.5, cy: 0.8, angle: 0,
+       stop: 0.15 rgb(37,37,37),
+       stop: 0.16 rgb(136,136,136),
+       stop: 0.34 rgb(136,136,136),
+       stop: 0.35 rgb(37,37,37));
+ }
+ 
+ QScrollBar::sub-line:vertical {
+    height: 12px;
+    border-left: 2px solid rgb(37,37,37);
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+    color: rgb(37,37,37);
+    background: rgb(37,37,37);
+ }
+ 
+ QScrollBar::up-arrow:vertical {
+    width: 8px;
+    height: 12px;
+    color: rgb(37,37,37);
+    background: qconicalgradient(cx: 0.5, cy: 0.2, angle: 180,
+       stop: 0.15 rgb(37,37,37),
+       stop: 0.16 rgb(119,119,119),
+       stop: 0.34 rgb(119,119,119),
+       stop: 0.35 rgb(37,37,37));
+ }
+ 
+ QScrollBar::up-arrow:vertical:hover, QScrollBar::up-arrow:vertical:pressed {
+    width: 8px;
+    height: 12px;
+    color: rgb(37,37,37);
+    background: qconicalgradient(cx: 0.5, cy: 0.2, angle: 180,
+       stop: 0.15 rgb(37,37,37),
+       stop: 0.16 rgb(136,136,136),
+       stop: 0.34 rgb(136,136,136),
+       stop: 0.35 rgb(37,37,37));
+ }
+ 
+ QComboBox::drop-down {
+    margin-right: 6px;
+    border: 0px;
+    border-radius: 0px;
+ }
+ 
+ QComboBox::down-arrow {
+    background: qconicalgradient(cx: 0.5, cy: 0.8, angle: 0,
+       stop: 0.15 rgba(255,255,255,0),
+       stop: 0.16 rgba(37,37,37,0),
+       stop: 0.34 rgba(37,37,37,0),
+       stop: 0.35 rgba(255,255,255,0));
+ }
+ QComboBox::down-arrow:hover {
+    background: qconicalgradient(cx: 0.5, cy: 0.8, angle: 0,
+       stop: 0.15 rgba(255,255,255,0),
+       stop: 0.16 rgba(37,37,37,0),
+       stop: 0.34 rgba(37,37,37,0),
+       stop: 0.35 rgba(255,255,255,0));
+ }
+ QComboBox::down-arrow:on {
+    background: qconicalgradient(cx: 0.5, cy: 0.2, angle: 180,
+       stop: 0.15 rgba(255,255,255,0),
+       stop: 0.16 rgba(37,37,37,0),
+       stop: 0.34 rgba(37,37,37,0),
+       stop: 0.35 rgba(255,255,255,0));
+ }
+ 
+ QComboBox::down-arrow:pressed {
+    background: qconicalgradient(cx: 0.5, cy: 0.7, angle: 0,
+       stop: 0.15 rgba(255,255,255,0),
+       stop: 0.16 rgba(37,37,37,0),
+       stop: 0.34 rgba(37,37,37,0),
+       stop: 0.15 rgba(255,255,255,0));
+ }
+  
+ QGroupBox {
+   font: bold 14px "Segoe UI";
+   background-color: rgb(67,67,67);
+   color: rgb(230, 227, 227);
+   padding-bottom: 8px;
+}
+
+ QLabel {
+    font: bold 14px "Segoe UI";
+    background-color: rgb(67,67,67);
+    color: rgb(230, 227, 227);
+    padding-bottom: 8px;
+ }
+ 
+ QLabel#mEmptyLabel, QLabel#mStartWith,
+ QLabel#mExtendLabel {
+    font: bold 24px "Segoe UI";
+    padding: 45px 2px 10px 0px;
+ }
+ 
+ QLabel#mStartupTemplateLabel, QLabel#mRecentFilesLabel{
+    font: bold 24pt "Segoe UI";
+    padding: 45px 2px 10px 0px;
+ }
+ 
+ QLabel#mLearningResourcesLabel {
+    font: bold 15px "Segoe UI";
+    padding-bottom: 12px;
+    padding-top: -4px;
+ }
+ 
+ #mLearningResources {
+    background-color: rgb(77,77,77);
+    border: 1px solid rgb(0,0,0);
+    padding: 10px 34px 10px 33px;
+    margin-bottom: 28px;
+ }
+ 
+ #mResource1Label, #mResource2Label, #mResource3Label, #mResource4Label {
+    background-color: rgb(77,77,77);
+    font: 12px "Segoe UI";
+    padding-left: -4px;
+ }
+ 
+ #mResource1Label, #mResource2Label {
+    padding-top: 0px;
+    padding-bottom: 2px;
+ }
+ 
+ #mResource3Label, #mResource4Label {
+    padding-top: 0px;
+    padding-bottom: 0px;
+ }
+ 
+ #mResource1Gfx, #mResource2Gfx, #mResource3Gfx, #mResource4Gfx {
+    border: none;
+    background-color: rgb(77,77,77);
+    margin: 0px;
+ }
+ 
+ #mInterLearnResVertSpacer1, #mInterLearnResVertSpacer2 {
+    background-color: rgb(77,77,77);
+    min-width: 26px;
+ }
+ 
+ #mInterLearnResHorizSpacer1, #mInterLearnResHorizSpacer2 {
+    background-color: rgb(77,77,77);
+ }
+ 
+ #mLearnSpacer1, #mLearnSpacer2, #mLearnSpacer3 {
+    min-width: 78px;
+ }
+ 
+ QLabel#mMainMovieLabel{
+    font: bold 24px "Segoe UI";
+    padding: 45px 2px 0px 0px;
+    margin: 0px 0px 23px 0px;
+ }
+ 
+ QGraphicsView#mMainMovieGfx {
+    border: 1px solid rgb(27,27,27);
+ }
+  
+ QComboBox#mAvailableMoviesCombo {
+    min-width: 364px;
+    max-width: 840px;
+    margin-top: 24px;
+ }
+ 
+ QAbstractItemView, QListWidget {
+    font: 15px "Segoe UI";
+    background-color: rgb(77,77,77);
+    qproperty-alternatingRowColors: true;
+    alternate-background-color: rgb(89,89,89);
+    border-top: 1px solid rgb(37,37,37);
+    border-bottom: 1px solid rgb(67,67,67);
+    border-left: 1px solid rgb(37,37,37);
+    border-right: 1px solid rgb(37,37,37);
+    color: rgb(220,220,220);
+    selection-background-color: rgb(157,162,177);
+    selection-color: rgb(255,255,255);
+ }
+ 
+ QListWidget::item {
+    min-height: 56px;
+ }
+ 
+ #mTemplatesList {
+    font: 12px "Segoe UI";
+    min-height: 175px;
+    min-width: 570px;
+ }
+ 
+ #mTemplatesList::item {
+    font: 12px "Segoe UI";
+    min-height: 122px;
+    min-width: 184px;
+    max-width: 184px;
+ }
+ 
+ QAbstractItemView::item, QListWidget::item {
+    color: rgb(255,255,255);
+    selection-color: rgb(255,255,255);
+ }
+ 
+ QAbstractItemView::item:hover, QListWidget::item:hover {
+    color: rgb(255,255,255);
+    selection-color: rgb(255,255,255);
+ }
+ 
+ #mStartSpacer1, #mStartSpacer2 {
+    min-width: 30px;
+ }
+ 
+ QFrame#mNewSceneTop {
+    background-color: rgb(77,77,77);
+    border-top: 1px solid rgb(37,37,37);
+    border-bottom: 1px solid rgb(67,67,67);
+    border-left: 1px solid rgb(37,37,37);
+    border-right: 1px solid rgb(37,37,37);
+    padding-top: 4px;
+    padding-bottom: 10px;
+ }
+ 
+ QWidget#mNewSceneTop .QWidget {
+    background-color: rgb(77,77,77);
+ }
+ 
+ QLineEdit#mProjectEdit {
+    background-color: rgb(77,77,77);
+    background: rgb(57,57,57);
+    color: rgb(220,220,220);
+    selection-background-color: rgb(157,162,177);
+    selection-color: rgb(255,255,255);
+    border: 1px solid rgb(47,47,47);
+    border-radius: 2px;
+ }
+ 
+ QWidget#mNewSceneTop QToolButton {
+    background-color: rgb(77,77,77);
+    text-decoration: underline;
+    font: 12px "Segoe UI";
+    color: rgb(110,150,210);
+    margin-top: 8px;
+ }
+ 
+ QComboBox#mWorkspaceCombo {
+    max-width: 300px;
+ }
+ 
+ QWidget#mNewSceneTop QToolButton:hover {
+    text-decoration: underline;
+    color: rgb(130,182,240);
+ }
+ 
+ QWidget#mNewSceneTop QLabel#mWorkspaceLabel {
+    background-color: rgb(77,77,77);
+    font: 12px "Segoe UI";
+    padding: 4px 0px 3px 0px;
+ }
+ 
+ QWidget#mNewSceneTop QLabel#mProjectLabel {
+    background-color: rgb(77,77,77);
+    font: 12px "Segoe UI";
+    padding: 16px 0px 3px 0px;
+ }
+ 
+ #mRecentFileExt, #mNewSceneExt {
+    background-color: rgb(77,77,77);
+    border-top: 1px solid rgb(37,37,37);
+    border-bottom: 1px solid rgb(37,37,37);
+    border-left: 1px solid rgb(37,37,37);
+    border-right: 1px solid rgb(37,37,37);
+ }
+ 
+ QWidget#mDarkFill1, QWidget#mDarkFill2 {
+    background-color: rgb(77,77,77);
+    border: 0px;
+ }
+ 
+ WelcomeScreen--MovieLink {
+    font: bold 12px "Segoe UI";
+    border: none;
+    background-color: rgb(67,67,67);
+    color: rgb(220,220,220);
+    padding-bottom: 0px;
+    margin: 10px 0px 1px;
+ }
+ 
+ WelcomeScreen--MovieLink:hover {
+    color: rgb(255,255,255);
+    text-decoration: underline;
+ }
+ 
+ #mExtendTab QLabel#mAutodesk360Label {
+    font: bold 15px "Segoe UI";
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+    padding-top: -4px;
+ }
+ 
+ #mExtendTab QLabel#mAutodesk360MoreLabel {
+    font: 12px "Segoe UI";
+    margin-top: 0px;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    padding-left: -2px;
+ }
+ 
+ #mExtendTab QLabel#mAutodesk360Icon {
+    font: 12px "Segoe UI";
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ #mMoreResourcesLabel {
+    font: bold 15px "Segoe UI";
+    margin: 21px 0px 8px 0px;
+    padding: 0px;
+    padding-left: -2px;
+    padding-bottom: 4px;
+ }
+ 
+ #mExtendTab #mAssetLibraryAppExchange {
+    margin: 0px 0px 14px 0px;
+    padding-bottom: 3px;
+ }
+ 
+ #mExtendTab #mVegetation {
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 3px;
+ }
+ 
+ #mExtendTab QGraphicsView {
+    background-color: rgb(67,67,67);
+    border: 1px solid rgb(57,57,57);
+    border: none;
+    margin: 0px;
+ }
+  
+ QLabel#mExtendLabel {
+    padding-left: -2px;
+ }
+ 
+ #mExtendTab QLabel#mFeaturedAppLabel {
+    font: bold 16px "Segoe UI";
+    margin: 5px 0px 0px 0px;
+    padding-left: -4px;
+    padding-bottom: 6px;
+ }
+ 
+ #mExtendTab QFrame#mFeaturedAppBox .QWidget {
+    background-color: rgb(77,77,77);
+ }
+ 
+ #mExtendTab QFrame#mFeaturedAppBox {
+    background-color: rgb(77,77,77);
+    border-top: 1px solid rgb(37,37,37);
+    border-bottom: 1px solid rgb(37,37,37);
+    border-left: 1px solid rgb(37,37,37);
+    border-right: 1px solid rgb(37,37,37);
+    padding-bottom: 8px;
+    padding-top: 14px;
+ }
+ 
+ #mExtendTab #mPluginsBox {
+    margin: 0px 10px;
+    max-width: 240px;
+ }
+ 
+ #mExtendTab #mPluginsSpacer {
+    margin: 0px 0px;
+    max-height: 33px;
+ }
+ 
+ #mExtendTab #mFeaturedApp {
+    background-color: rgb(77,77,77);
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+ }
+ 
+ #mExtendTab QLabel#mFeaturedAppTitle {
+    background-color: rgb(77,77,77);
+    font: 15px "Segoe UI";
+    padding-bottom: 0px;
+    margin: 8px 0px 0px 6px;
+ }
+ 
+ #mExtendTab QLabel#mFeaturedAppTitle:hover {
+    background-color: rgb(77,77,77);
+    color: rgb(255,255,255);
+ }
+ 
+ #mExtendTab QLabel#mFeaturedAppAuthor {
+    background-color: rgb(77,77,77);
+    font: 10px "Segoe UI";
+    padding-bottom: 16px;
+    margin: 0px 0px 0px 6px;
+ }
+ 
+ #mExtendTab QLabel#mFeaturedAppAuthor:hover {
+    color: rgb(255,255,255);
+ }
+ 
+ #mExtendTab #mPriceLabel {
+    background-color: rgb(77,77,77);
+    font: 10px "Segoe UI";
+    padding-bottom: 16px;
+    margin: 0px 6px 0px 0px;
+ }
+ 
+ #mStarsBox {
+    padding-bottom: 0px;
+    margin: 0px 6px 0px 0px;
+ }
+ 
+ #mStar1, #mStar2, #mStar3, #mStar4, #mStar5 {
+    background-color: rgb(77,77,77);
+    font: 15px "Segoe UI";
+    padding-bottom: 0px;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+ }
+ 
+ #mExtendTab #mMoreAppsBox {
+    border-top: 1px solid rgb(67,67,67);
+ }
+ 
+ #mExtendTab #mMoreApps {
+    margin: 14px 2px 6px 0px;
+ }
+ 
+ QToolButton {
+    font: bold 15px "Segoe UI";
+    border: none;
+    background-color: rgb(67,67,67);
+    color: rgb(198,198,198);
+ }
+ 
+ #mPreviousTabLink {
+    font: bold 15px "Segoe UI";
+    text-align: left;
+    padding: 0px 0px 2px 0px;
+ }
+ 
+ #mNextTabLink {
+    font: bold 15px "Segoe UI";
+    text-align: right;
+    padding: 0px 0px 2px 0px;
+ }
+ 
+ QToolButton:hover {
+    border: none;
+    background-color: rgb(67,67,67);
+    color: rgb(255,255,255);
+ }
+ 
+ QTabWidget {
+    background-color: rgb(67,67,67);
+    padding: none;
+    color: rgb(220,220,220);
+ }
+  
+ QTabWidget::pane {
+    background-color: rgb(67,67,67);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid rgb(67,67,67);
+    padding-bottom: 45px;
+    color: rgb(220,220,220);
+ }
+  
+ QTabWidget::tab-bar {
+    background-color: rgb(37,37,37);
+    alignment: center;
+ }
+ 
+ QTabBar::scroller, QTabBar QToolButton {
+    background-color: rgb(37,37,37);
+    border: none;
+ }
+ 
+ QTabBar::tab {
+    font: bold 15px "Segoe UI";
+    background-color: rgb(37,37,37);
+    border: none;
+    min-width: 80px;
+    padding: 15px 50px 10px;
+    color: rgb(153,153,153);
+ }
+ 
+ QTabBar::tab:hover {
+    background-color: rgb(37,37,37);
+    border: none;
+    min-width: 80px;
+    color: rgb(255,255,255);
+ }
+ 
+ QTabBar::tab:selected {
+    background-color: rgb(37,37,37);
+    border: none;
+    min-width: 80px;
+    background: qconicalgradient(cx: 0.5, cy: 0.4, angle: 270,
+       stop: 0.465 rgb(37,37,37),
+       stop: 0.47 rgb(67,67,67),
+       stop: 0.53 rgb(67,67,67),
+       stop: 0.535 rgb(37,37,37));
+    color: rgb(198,198,198);
+ }
+ 
+ QTabBar::tab:selected:hover {
+    color: rgb(255,255,255);
+ }
+ 
+ QToolButton#mNextTabArrow:hover, QToolButton#mPreviousTabArrow:hover, QToolButton#closeButton:hover
+ {
+     background-color: rgb(77,77,77);
+ }
+ 
+ StartupTemplate--TemplateItemView QScrollArea QWidget#ContentPane {
+    background-color: rgb(77,77,77);
+ }
+ 
+ StartupTemplate--TemplateItemView QScrollArea {
+    border: 1px solid rgb(27,27,27);
+    background-color: rgb(0,0,0);
+ }
+ 
+ StartupTemplate--TemplateItemView QLabel#Details {
+    color: white;
+    font-weight: normal; 
+    background: rgba(0,0,0,100);
+    font-size: 11pt;
+    padding: 10px; 
+ }
+ 
+ StartupTemplate--TemplateItemView QToolButton#CloseButton {
+    background: transparent;
+    border: none;
+ }
+ 
+ StartupTemplate--TemplateItemView QFocusFrame {
+    border: 2px solid blue;
+ }
+ 
+ StartupTemplate--TemplateItem QLabel {
+    color: white;
+    font-weight: normal; 
+    background: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 11pt;
+ }
+ 
+ StartupTemplate--TemplateItem QLabel#HoverText {
+    font: 10px "Segoe UI";
+    background: rgba(0,0,0,100);
+    padding: 15px;
+ }
+ 
+ StartupTemplate--TemplateItem QLabel#Title {
+    font-size: 12pt;
+    font-weight: bold; 
+ }
+ 
+ StartupTemplate--TemplateItem QLabel#More {
+    color: white;
+    padding: 10px;
+    font-size: 10pt;
+ }
+ 
