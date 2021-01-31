@@ -1,0 +1,3 @@
+[pre-commit-hook]
+params=*.py **/*.py
+limit=9.0
