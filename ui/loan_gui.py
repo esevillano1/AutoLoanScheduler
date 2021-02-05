@@ -1,5 +1,6 @@
 import sys
 from PyQt5 import QtWidgets, uic
+from QtWidgets import QDate
 
 class Settings(object):
 
@@ -39,8 +40,12 @@ class Settings(object):
             "Remaining Balance": self.remaining_balance
         }
 
+class App(object):
+    def __init__(self):
+        self.app = QtWidgets.QApplication(sys.argv)
+        self.gui = uic.loadUi("ui/loan_gui.ui")
+        self.gui.edit_loanStart.setDate(QDate(2019,5,13))
 
-app = QtWidgets.QApplication(sys.argv)
-
-window = uic.loadUi("ui/loan_gui.ui")
-window.show()
+    def show(self):
+        self.gui.show()
+        self.app.exec()

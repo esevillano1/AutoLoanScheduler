@@ -1,8 +1,7 @@
 import math
 import csv
 import os
-from ui.loan_gui import Settings, app
-
+from ui.loan_gui import Settings, App
 
 class AutoLoanScheduler(object):
 
@@ -102,6 +101,8 @@ class AutoLoanScheduler(object):
 
 if __name__ == "__main__":
     calc = AutoLoanScheduler()
+    app = App()
+
     calc.scheduler()
 
-    app.exec()
+    app.show()
